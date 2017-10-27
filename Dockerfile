@@ -31,6 +31,7 @@ WORKDIR /home/hidetomo/gollum
 RUN sudo apt-get -y install libicu-dev
 RUN sudo gem install gollum
 RUN sudo gem install github-markdown
+COPY auth.rb auth.rb
 RUN mkdir wiki
 RUN cd wiki; git init
 

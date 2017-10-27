@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /home/hidetomo/gollum/wiki
-gollum
+gollum --config /home/hidetomo/gollum/auth.rb
 
 while true; do
   sleep 10
